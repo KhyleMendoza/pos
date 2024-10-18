@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.tem {
+    display: grid;
+    grid-template-columns: minmax(60px, .2fr) minmax(70% ,.5fr) minmax(25%, .3fr);
+    grid-template-rows: 100vh;
+}
+
+.nav {
+    background-color: green;
+}
+
+.con {
+    margin: auto;
+}
+
+.logo {
+    position: relative;
+    top: 10px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.main {
+    background-color: #f0eeee;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1.5fr));
+    grid-gap: 16px;
+    padding: 8px;
+}
+
+.cm {
+    margin: auto;
+    width: 94%;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    height: 180px;
+}
+
+.category {
+    margin: 8px;
+}
+
+div.category > button {
+    margin: 0px 4px 4px 0px;
+    background-color: #fff;
+    width: 80px;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div.category > button.active {
+    background-color: black;
+    color: #fff;
+}
+
+
+.img {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.order {
+    margin-top: 15px;
+    background-color: green;
+    padding: 8px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.c2 {
+    margin-left: 15px;
+}
+
+.stock {
+    margin-bottom: 5px;
+}
+
+.pname {
+    font-size: 18px;
+    height: 80px;
+    width: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font: bold 16px Arial;
+}
+
+.pos {
+    max-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.pos-body {
+    max-height: 35%;
+    height: 50%;
+    overflow: auto;
+}
+
+.pitem {
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0eeee;
+}
+
+.pitem div button {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+
+.pitem > div {
+    display: flex;
+    align-items: center;
+}
+
+.pitem div p {
+    margin: 0 10px;
+}
+
+.pname2 {
+    margin: 10px 8px;
+    width: 180px;
+}
+
+.pos-header {
+    background-color: rgb(40, 100, 0);
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.pos-footer {
+    border-top: 1px solid #f0eeee;
+    padding: 8px;
+    height: 50%;
+    background-color: #fff;
+}
+
+.total {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.bcon {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.dinein, .takeout {
+    width: 48%;
+    padding: 8px;
+    margin: 8px 0;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+}
+
+.takeout {
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.dinein {
+    background-color: green;
+    color: white;
+}
