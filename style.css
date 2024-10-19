@@ -10,11 +10,11 @@ body {
 
 .tem {
     display: grid;
-    grid-template-columns: minmax(60px, .2fr) minmax(70% ,.5fr) minmax(25%, .3fr);
+    grid-template-columns: minmax(60px, 1fr) minmax(70% ,1fr) minmax(25%, 1fr);
     grid-template-rows: 100vh;
 }
 
-.nav {
+nav {
     background-color: green;
 }
 
@@ -32,7 +32,7 @@ body {
     height: 40px;
 }
 
-.main {
+main {
     background-color: #f0eeee;
     max-height: 100%;
     overflow-y: auto;
@@ -142,6 +142,7 @@ div.category > button.active {
     height: 25px;
     width: 25px;
     text-align: center;
+    margin: 0 4px;
 }
 
 .pitem > div {
@@ -207,4 +208,39 @@ input {
 .dinein {
     background-color: green;
     color: white;
+}
+
+@media (max-width: 600px) {
+    .tem {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    nav {
+        height: 60px;
+        grid-row: 1;
+    }
+
+    main {
+        grid-row: 3;
+        overflow: hidden;
+    }
+
+    .pos-footer {
+        grid-row: 2;
+    }
+
+    .category {
+        max-height: 20vh;
+    }
+
+    .container {
+        max-height: 80vh;
+        overflow: auto;
+    }
+
 }
